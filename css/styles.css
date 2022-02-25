@@ -75,9 +75,16 @@ p :last-child {
   align-items: center;
   margin-left: auto;
 }
-
+/* расстояние между мылом и тел */
 .header-contact {
   margin-right: 50px;
+}
+
+/* растояние между иконками и kонтаkтами
+ цвет иконки */
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-contact:last-child {
@@ -92,6 +99,11 @@ p :last-child {
 .header-link {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+/* мыло тел в строку */
+.header-link.link {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
