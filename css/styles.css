@@ -19,6 +19,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* сброс для заголовков */
@@ -145,10 +149,6 @@ p :last-child {
 }
 
 .hero {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-
   background-repeat: no-repeat;
   background-position: center;
   background-image: radial-gradient(
@@ -210,19 +210,33 @@ p :last-child {
 .benefits {
   padding-top: 94px;
 }
-
+/* размещение иконок */
 .benefits-wrapper {
   display: flex;
+  width: 1170px;
+  margin: auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .benefits-wrapper-benefits {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  min-height: 120px;
   width: 270px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  border: 5px solid #f44336;
 }
 
-.benefits-wrapper-benefits:last-child {
-  margin: 0;
+.benefits-wrapper-benefits:nth-last-of-type(-n + 4) {
+  margin-bottom: 0;
 }
+
 .userpic {
   background-color: var(--background-btn-filter);
 
