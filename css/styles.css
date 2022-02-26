@@ -212,6 +212,10 @@ p :last-child {
   background: var(--accent-color-hover);
 }
 
+.hero-button-btn:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .benefits-title {
   font-weight: 700;
   line-height: 1.14;
