@@ -247,10 +247,9 @@ p :last-child {
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
-
-  border: 5px solid #f44336;
 }
 
+/* выбор крайних элементов */
 .benefits-wrapper-benefits:nth-last-of-type(-n + 4) {
   margin-bottom: 0;
 }
