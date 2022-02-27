@@ -238,9 +238,6 @@ img {
 /* размещение иконок герой*/
 .benefits-wrapper {
   display: flex;
-  width: 1170px;
-  margin: auto;
-  box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -312,13 +309,10 @@ img {
 }
 
 .userpic-txt {
-  color: var(--txt-color);
-
   text-align: center;
 }
 
-.example-title,
-.userpic-title {
+.h2-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -333,13 +327,13 @@ img {
   justify-content: space-around;
   margin-top: 10px;
 }
-
+/* иконки блочные, размеры их */
 .userpic-social-item {
   display: block;
   height: 44px;
   width: 44px;
 }
-
+/* центрирование иконок */
 .userpic-social-link.link {
   display: flex;
   border-radius: 50%;
@@ -355,6 +349,40 @@ img {
 .userpic-social-link:focus {
   background-color: var(--accent-color);
   color: var(--header-hero-color);
+  fill: currentColor;
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* размещение иконок наши клиенты */
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  fill: var(--txt-color);
+}
+
+/* иконки блочные, размеры их */
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  background-color: var(--header-hero-color);
+  color: var(--accent-color);
+  border: var(--accent-color) 1px solid;
   fill: currentColor;
 }
 
