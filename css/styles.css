@@ -236,7 +236,8 @@ img {
   padding-top: 94px;
 }
 /* размещение иконок герой*/
-.benefits-wrapper {
+.benefits-wrapper,
+.clients-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -359,9 +360,6 @@ img {
 
 /* размещение иконок наши клиенты */
 .clients-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   fill: var(--txt-color);
 }
 
