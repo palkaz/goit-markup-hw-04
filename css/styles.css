@@ -25,6 +25,11 @@ body {
   margin-right: auto;
 }
 
+/* скрытие маркера списка, сброс отступов для списков */
+.list {
+  list-style: none;
+}
+
 /* сброс для заголовков */
 h1,
 h2,
@@ -311,6 +316,7 @@ img {
 
 .userpic-txt {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .h2-title {
@@ -326,7 +332,6 @@ img {
 .userpic-social {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
 }
 /* иконки блочные, размеры их */
 .userpic-social-item {
@@ -438,9 +443,21 @@ img {
   margin-right: 0;
 }
 
-/* скрытие маркера списка, сброс отступов для списков */
-.list {
-  list-style: none;
+.footer-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--header-hero-color);
+
+  margin-bottom: 20px;
+}
+
+.list-footer.container {
+  display: flex;
+}
+
+.footer-wrapper-icon {
+  margin-left: 70px;
 }
 
 .portfolio-btn {
@@ -461,7 +478,8 @@ img {
   padding-left: 22px;
 }
 /* правильное скрытие заголовка */
-.portfolio {
+.portfolio,
+.hidden-h {
   position: absolute;
   width: 1px;
   height: 1px;
