@@ -49,6 +49,13 @@ p :last-child {
   margin-bottom: 0;
 }
 
+/* делаем картинки из строчных в блочные
+заполнение 100% */
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -259,7 +266,6 @@ p :last-child {
   align-items: center;
   background: var(--background-btn-filter);
   border-radius: 4px;
-  /* border: 5px solid #f44336; */
   /* background-color: orange; */
 }
 
@@ -280,6 +286,35 @@ p :last-child {
 
 .userpic-wrapper {
   margin-left: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  /* test */
+  /* border: 5px solid #f44336; */
+}
+
+.userpic-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-color);
+
+  text-align: center;
+}
+
+.userpic-wrapper-txt {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* test */
+  /* border: 5px solid #1a01fc; */
+}
+
+.userpic-txt {
+  color: var(--txt-color);
+
+  text-align: center;
 }
 
 .example-title,
@@ -291,6 +326,36 @@ p :last-child {
   color: var(--title-color);
 
   margin-bottom: 50px;
+}
+/* позицианирование иконок */
+.userpic-social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.userpic-social-item {
+  display: block;
+  height: 44px;
+  width: 44px;
+}
+
+.userpic-social-link.link {
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--header-hero-color);
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  fill: var(--txt-color);
+}
+
+/* изменение цвета иконок */
+.userpic-social-link:hover,
+.userpic-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--header-hero-color);
+  fill: currentColor;
 }
 
 .example {
@@ -308,26 +373,6 @@ p :last-child {
 
 .exemple-img {
   margin-left: 30px;
-}
-
-.userpic-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--title-color);
-
-  text-align: center;
-}
-
-.userpic-wrapper-txt {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.userpic-txt {
-  color: var(--txt-color);
-
-  text-align: center;
 }
 
 .footer {
@@ -389,7 +434,7 @@ p :last-child {
   padding-bottom: 6px;
   padding-left: 22px;
 }
-
+/* правильное скрытие заголовка */
 .portfolio {
   position: absolute;
   width: 1px;
@@ -465,11 +510,4 @@ p :last-child {
 
 .portfolio-exemple:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-
-/* делаем картинки из строчных в блочные
-заполнение 100% */
-.img {
-  display: block;
-  max-width: 100%;
 }
