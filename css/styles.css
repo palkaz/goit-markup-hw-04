@@ -11,6 +11,7 @@
   --background-hero-footer: #2f303a;
   --background-btn-filter: #f5f4fa;
   --footer-contact: rgba(255, 255, 255, 0.6);
+  --footer-bg-icon: rgba(255, 255, 255, 0, 1);
 }
 
 body {
@@ -269,7 +270,6 @@ img {
   align-items: center;
   background: var(--background-btn-filter);
   border-radius: 4px;
-  /* background-color: orange; */
 }
 
 .userpic {
@@ -316,7 +316,7 @@ img {
 
 .userpic-txt {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .h2-title {
@@ -328,19 +328,23 @@ img {
 
   margin-bottom: 50px;
 }
+/* блок иконки соцсетей */
 /* позицианирование иконок */
-.userpic-social {
+.items {
   display: flex;
-  justify-content: space-around;
+  width: 206px;
+  margin: auto;
+  justify-content: space-between;
+  align-content: center;
 }
 /* иконки блочные, размеры их */
-.userpic-social-item {
+.items-item {
   display: block;
   height: 44px;
   width: 44px;
 }
 /* центрирование иконок */
-.userpic-social-link.link {
+.items-link {
   display: flex;
   border-radius: 50%;
   background-color: var(--header-hero-color);
@@ -349,14 +353,20 @@ img {
   justify-content: center;
   fill: var(--txt-color);
 }
+/* форматирование для футера */
+.footer .items-link {
+  background-color: var(--txt-color);
+  fill: var(--header-hero-color);
+}
 
 /* изменение цвета иконок */
-.userpic-social-link:hover,
-.userpic-social-link:focus {
+.items-link:hover,
+.items-link:focus {
   background-color: var(--accent-color);
   color: var(--header-hero-color);
   fill: currentColor;
 }
+/* конец блока иконок соцсетей */
 
 .clients {
   padding-top: 94px;
