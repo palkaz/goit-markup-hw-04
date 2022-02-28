@@ -11,7 +11,7 @@
   --background-hero-footer: #2f303a;
   --background-btn-filter: #f5f4fa;
   --footer-contact: rgba(255, 255, 255, 0.6);
-  --footer-bg-icon: rgba(255, 255, 255, 0, 1);
+  --footer-bg-icon: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -310,8 +310,6 @@ img {
 .userpic-wrapper-txt {
   padding-top: 30px;
   padding-bottom: 30px;
-  /* test */
-  /* border: 5px solid #1a01fc; */
 }
 
 .userpic-txt {
@@ -355,7 +353,7 @@ img {
 }
 /* форматирование для футера */
 .footer .items-link {
-  background-color: var(--txt-color);
+  background-color: var(--footer-bg-icon);
   fill: var(--header-hero-color);
 }
 
@@ -545,6 +543,7 @@ img {
   border-bottom: 1px solid var(--header-line-color);
   border-right: 1px solid var(--header-line-color);
 }
+
 .portfolio-benefits-title {
   font-weight: 700;
   font-size: 18px;
@@ -556,6 +555,9 @@ img {
 .portfolio-exemple {
   margin-right: 30px;
   margin-bottom: 30px;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-exemple:nth-child(3n) {
