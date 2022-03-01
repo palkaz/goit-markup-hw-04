@@ -338,17 +338,20 @@ img {
 /* позицианирование иконок */
 .items {
   display: flex;
-  width: 206px;
-  margin: auto;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: center;
 }
 /* иконки блочные, размеры их */
 .items-item {
-  display: block;
   height: 44px;
   width: 44px;
+  margin-right: 10px;
 }
+
+/* убираем крайний отступ */
+.items-item:last-child {
+  margin-right: 0;
+}
+
 /* центрирование иконок */
 .items-link {
   display: flex;
