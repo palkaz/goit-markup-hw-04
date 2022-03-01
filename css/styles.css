@@ -192,7 +192,7 @@ img {
   background-position: center;
   background-image: radial-gradient(
       at center,
-      var(--header-bg),
+      var(--hero-overlay),
       var(--hero-overlay)
     ),
     url(../images/img-hero.jpg);
