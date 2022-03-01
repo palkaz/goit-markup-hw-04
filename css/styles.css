@@ -112,11 +112,18 @@ img {
 .header-link {
   padding-top: 24px;
   padding-bottom: 25px;
+
+  /* test */
+  /* border-bottom: 5px solid #f44336; */
 }
 /* мыло тел в строку */
 .header-link.link {
   display: flex;
   align-items: center;
+
+  /* компенсация падинга навигации футер */
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header-nav {
@@ -125,6 +132,11 @@ img {
 
 .header-nav-site {
   display: flex;
+}
+
+.header-nav-site .header-link {
+  /* test */
+  /* background-color: #790b0b13; */
 }
 
 .header-nav-site .link {
