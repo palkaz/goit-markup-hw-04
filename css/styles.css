@@ -257,31 +257,27 @@ img {
 .benefits-wrapper,
 .clients-wrapper {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .benefits-wrapper-benefits {
   margin-bottom: 30px;
   display: flex;
   min-height: 120px;
-  width: 270px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-btn-filter);
+  border-radius: 4px;
+}
+
+/* отступ между колонами */
+.benefits-column {
+  margin-right: 30px;
 }
 
 /* выбор крайних элементов */
-.benefits-wrapper-benefits:nth-last-of-type(-n + 4) {
-  margin-bottom: 0;
-}
-/* выбор иконок */
-.benefits-wrapper-benefits:nth-child(-n + 4) {
-  justify-content: center;
-  align-items: center;
-  background: var(--background-btn-filter);
-  border-radius: 4px;
+.benefits-column:last-child {
+  margin-right: 0;
 }
 
 .userpic {
