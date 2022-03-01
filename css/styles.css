@@ -10,6 +10,7 @@
   --header-line-color: #ececec;
   --background-hero-footer: #2f303a;
   --background-btn-filter: #f5f4fa;
+  --icon-items-color: #afb1b8;
   --footer-contact: rgba(255, 255, 255, 0.6);
   --footer-bg-icon: rgba(255, 255, 255, 0.1);
 }
@@ -20,10 +21,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* скрытие маркера списка, сброс отступов для списков */
@@ -297,6 +294,7 @@ img {
 
 .userpic-wrapper {
   margin-left: 30px;
+  background-color: var(--header-hero-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -357,12 +355,12 @@ img {
   height: inherit;
   align-items: center;
   justify-content: center;
-  fill: var(--txt-color);
+  fill: var(--icon-items-color);
 }
 /* форматирование для футера */
 .footer .items-link {
   background-color: var(--footer-bg-icon);
-  fill: var(--header-hero-color);
+  fill: var(--icon-items-color);
 }
 
 /* изменение цвета иконок */
@@ -379,19 +377,27 @@ img {
   padding-bottom: 94px;
 }
 
-/* размещение иконок наши клиенты */
-.clients-wrapper {
-  fill: var(--txt-color);
+/* иконки блочные, размеры их */
+.clients-list {
+  width: 170px;
+  height: 92px;
 }
 
-/* иконки блочные, размеры их */
+/* размещение иконок наши клиенты */
+.clients-wrapper {
+  fill: var(--icon-items-color);
+  justify-content: space-between;
+}
+
+/* иконки блочные, расположение их */
 .clients-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
 
+  fill: var(--icon-items-color);
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
