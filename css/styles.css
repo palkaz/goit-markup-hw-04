@@ -24,7 +24,8 @@ body {
 }
 
 /* правильное скрытие заголовка */
-.portfolio {
+.portfolio,
+.hidden-h {
   position: absolute;
   width: 1px;
   height: 1px;
