@@ -199,6 +199,8 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -476,6 +478,7 @@ img {
 
 .list-footer.container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-wrapper-icon {
@@ -498,21 +501,6 @@ img {
   padding-right: 22px;
   padding-bottom: 6px;
   padding-left: 22px;
-}
-/* правильное скрытие заголовка */
-.portfolio,
-.hidden-h {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .portfolio-benefits {
