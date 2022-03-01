@@ -23,6 +23,27 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* правильное скрытие заголовка */
+.portfolio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* сброс стилей для ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* скрытие маркера списка, сброс отступов для списков */
 .list {
   list-style: none;
@@ -97,10 +118,7 @@ img {
   fill: currentColor;
 }
 
-.header-contact:last-child {
-  margin: 0;
-}
-
+.header-contact:last-child,
 .header-nav:last-child {
   margin: 0;
 }
@@ -131,36 +149,26 @@ img {
   display: flex;
 }
 
-.header-nav-site .header-link {
-  /* test */
-  /* background-color: #790b0b13; */
-}
-
 .header-nav-site .link {
   color: var(--title-color);
-  text-decoration: none;
 }
 
 .header-nav-site a:hover,
 .header-nav-site a:focus {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
 .link.current {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
 .header-contact a.link {
   color: var(--txt-color);
-  text-decoration: none;
 }
 
 .header-contact a:hover,
 .header-contact a:focus {
   color: var(--accent-color);
-  text-decoration: none;
 }
 
 .logo {
@@ -301,9 +309,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  /* test */
-  /* border: 5px solid #f44336; */
 }
 
 .userpic-name {
@@ -447,7 +452,6 @@ img {
 }
 
 .footer-contact a.link {
-  text-decoration: none;
   color: var(--footer-contact);
 }
 
@@ -560,7 +564,11 @@ img {
 .portfolio-exemple {
   margin-right: 30px;
   margin-bottom: 30px;
+}
 
+.portfolio-shadows:hover,
+.portfolio-shadows:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
